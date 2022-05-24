@@ -30,14 +30,5 @@ class ViewController: UIViewController{
     override func viewDidDisappear(_ animated: Bool) {
         print("ViewController 뷰가 사라졌다.")
     }
-    @IBAction func tabCodePushButton(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") else { return }
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
-    @IBAction func tapCodePresentButton(_ sender: UIButton) {
-        guard let viewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") else { return }
-        viewcontroller.modalPresentationStyle = .fullScreen
-        self.present(viewcontroller, animated: true, completion: nil)
-    }
 }
 

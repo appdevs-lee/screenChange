@@ -30,8 +30,5 @@ class SegueViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         print("SegueViewController 뷰가 사라졌다.")
     }
-    @IBAction func tabBackButton(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
     
 }
