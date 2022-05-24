@@ -64,9 +64,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BlO-28-syw"/>
-                    <connections>
-                        <outlet property="nameLabel" destination="5KF-o1-VJH" id="pFo-cp-AvN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

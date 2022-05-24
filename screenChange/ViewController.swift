@@ -7,9 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, SendDataDelegate {
+class ViewController: UIViewController{
 
-    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,28 +31,13 @@ class ViewController: UIViewController, SendDataDelegate {
         print("ViewController 뷰가 사라졌다.")
     }
     @IBAction func tabCodePushButton(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") as? CodePushViewController else { return }
-        viewController.name = "Gunter"
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") else { return }
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     @IBAction func tapCodePresentButton(_ sender: UIButton) {
-        guard let viewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") as? CodePresentViewController else { return }
-        viewcontroller.name = "Gunter"
-        viewcontroller.delegate = self
+        guard let viewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") else { return }
         viewcontroller.modalPresentationStyle = .fullScreen
         self.present(viewcontroller, animated: true, completion: nil)
     }
-    
-    func sendData(name: String) {
-        self.nameLabel.text = name
-        self.nameLabel.sizeToFit()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? SegueViewController {
-            viewController.name = "Gunter"
-        }
-    }
-    
 }
 
