@@ -30,18 +30,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="코드로 push"/>
-                                <connections>
-                                    <action selector="tabCodePushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFw-bK-45h"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rR-22-HKs">
                                 <rect key="frame" x="151" y="536" width="114" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="코드로 present"/>
-                                <connections>
-                                    <action selector="tapCodePresentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOW-dn-RcT"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KF-o1-VJH">
                                 <rect key="frame" x="187" y="644" width="42" height="21"/>
@@ -89,9 +83,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
-                                <connections>
-                                    <action selector="tabBackButton:" destination="J2m-qW-juh" eventType="touchUpInside" id="YUN-dq-x3w"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOv-es-0IU">
                                 <rect key="frame" x="186" y="576" width="42" height="21"/>
@@ -105,9 +96,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Iq0-at-p4N"/>
-                    <connections>
-                        <outlet property="nameLabel" destination="TOv-es-0IU" id="o4U-qe-bdB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNW-mD-kyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,9 +114,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
-                                <connections>
-                                    <action selector="tapBackButton:" destination="SSW-93-VPt" eventType="touchUpInside" id="YzJ-vl-fBC"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코드로 Present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVd-nb-eMI">
                                 <rect key="frame" x="116" y="173" width="183" height="36"/>
@@ -148,9 +133,6 @@
                         <viewLayoutGuide key="safeArea" id="UDK-HP-2YA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="nameLabel" destination="rXZ-EX-tkO" id="rVE-7E-xe5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmb-r1-UxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,9 +151,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
-                                <connections>
-                                    <action selector="tabBackButton:" destination="FEi-U2-IVq" eventType="touchUpInside" id="cBR-IB-Ifg"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="segue로 present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUB-e9-jN0">
                                 <rect key="frame" x="20" y="342" width="374" height="36"/>
@@ -228,9 +207,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
-                                <connections>
-                                    <action selector="tapBackButton:" destination="bX0-D3-aDF" eventType="touchUpInside" id="h2W-5u-eDF"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWx-Hn-EVm">
                                 <rect key="frame" x="186" y="442.5" width="42" height="21"/>
@@ -246,9 +222,6 @@
                             <constraint firstItem="uWx-Hn-EVm" firstAttribute="centerY" secondItem="OoM-Wk-0S2" secondAttribute="centerY" id="eRq-UM-zJM"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="nameLabel" destination="uWx-Hn-EVm" id="uDn-9v-j18"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akY-xY-GVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
