@@ -14,4 +14,7 @@ class SegueViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func tapBackButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
